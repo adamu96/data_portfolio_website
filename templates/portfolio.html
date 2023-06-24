@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title%}Portfolio{% endblock %}
+{% block content %}
+    <div class="web-page">
+    <h1 class="page-head">Data Visualisation</h1>
+    <p class="page-head">Browse below to see a list of my most recent and compelling
+        data visualisation projects.
+    </p>
+    <div class="vis-parent">
+      <div class="img-container">
+        <a href="/"><img class="vis-img shadow" src="../static/images/tableau_test.png" alt="tableau vis"></a>
+      </div>
+      <div class="detail-container">
+        <p class="botter"><h2>Coffee Roaster BI Report</h2>
+          This visualisation details the performance of a chain coffee company in New York State.
+          <br><br>This company requires a broad range of analytics regarding their daily operations as well as a deep
+          understanding of customer and competitor behaviour.
+          <br><br>With a focus on prescriptive and predictive analytics, this visualisation is bolstered by the dynamic
+          geospatial analytics embedded in the homepage.
+        </p>
+      </div>
+    </div>
+    <br>
+    <div class="vis-parent">
+      <div class="detail-container">
+        <p class="botter"><h2>Alternative Vis Designed for Other Reasons</h2>
+          This visualisation details the performance of a chain coffee company in New York State.
+          <br><br>This company requires a broad range of analytics regarding their daily operations as well as a deep
+          understanding of customer and competitor behaviour.
+          <br><br>With a focus on prescriptive and predictive analytics, this visualisation is bolstered by the dynamic
+          geospatial analytics embedded in the homepage.
+        </p>
+      </div>
+      <div class="img-container">
+        <img class="vis-img shadow" src="../static/images/tableau_test_2.png" alt="tableau vis">
+      </div>
+    </div>
+{% endblock %}

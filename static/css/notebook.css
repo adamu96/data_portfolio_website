@@ -1,0 +1,33 @@
+.notebook-page {
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: white;
+    margin: 70px 0px 0px 0px;
+    border-right: 2px solid gray;
+}
+
+.sidebar-button {
+    width: 80%;
+    border: 0px;
+    margin: 10px 10px 10px 20px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(128, 128, 128, 0.365);
+}
+
+.sidebar-button:active {
+    background-color: rgba(128, 128, 128, 0.679);
+}
+
+.notebook {
+    margin: 70px 0px 0px 200px;
+    z-index: -1;
+}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title%}Home{% endblock %}
+{% block content %}
+<head>
+  <link rel="stylesheet" type="text/css" href="../static/css/stock.css" />
+</head>
+
+<div class="graph">
+  <div id="chart" class="chart"></div>
+  <div class="table">
+    {{ tbl|safe }}
+  </div>
+</div>
+    
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <script type='text/javascript'>
+    // plotGraph({{ line }})
+    var graphs = {{line | safe}};
+    Plotly.plot('chart',graphs,{});
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% endblock %}

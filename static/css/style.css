@@ -1,0 +1,69 @@
+nav {
+    z-index: 2;
+}
+
+.home-header {
+    float: left;
+}
+
+.web-page {
+    margin: 0px 15px 0px 15px;
+}
+
+.page-head {
+    margin: 0px 0px 0px 25px;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+}
+
+form {
+    padding-left: 10px;
+}
+
+.text-box {
+    height: 100px;
+    width: 600px;
+    text-align: left;
+}
+
+
+/* Visualisations */
+.topper {
+    margin: 0px 15px 0px 15px;
+}
+
+.vis-parent {
+    padding: 20px;
+    display: flex;
+}
+
+.img-container {
+    margin: 0px 0px 0px 0px;
+}
+
+.detail-container {
+    margin: 0px 40px 0px 40px;
+}
+
+.vis-img {
+    width: 1000px;
+    height: 500px;
+    margin: 0px 0px 0px 0px;
+}
+
+.botter {
+    margin: 1px;
+}
+
+/* Contact footer */
+.contact-bar {
+    z-index: 2;
+    border-top: 1px solid rgba(53, 52, 52, 0.361);
+}
+
+.logo {
+    width: 800px;
+    height: 50px;
+}

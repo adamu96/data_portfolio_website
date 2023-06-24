@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title%}Notebook Work{% endblock %}
+{% block content %}
+<head></head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script> 
+    $(function(){
+        $("#notebookContent").load("../static/files/di_pred_xgboost_only.html"); 
+    });
+    </script> 
+    <link rel="stylesheet" href="../static/css/notebook.css">
+</head> 
+    <div class="notebook-page">
+        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
+        <div class="sidebar">
+            {% for row in range(len) %}
+                <button class="sidebar-button" value="../static/files/di_pred_xgboost_only.html" onclick="loadNotebook(this.value)">{{ notebooks['name'][row] }}</button>
+            {% endfor %}
+            <button class="sidebar-button" value="../static/files/operability_di_corr.html" onclick="loadNotebook(this.value)">Operability and DI Correlation - EDA</button>
+            <button class="sidebar-button" value="file3">Data Pipelines</button>
+        </div>
+
+        <div class="notebook" id="notebookContent"></div>
+        
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+            
+            </div>
+        </div>
+    </div>
+{% endblock %}
